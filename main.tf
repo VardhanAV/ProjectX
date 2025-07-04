@@ -11,7 +11,7 @@ resource "aws_key_pair" "generated_key" {
   key_name   = "ca1"
   public_key = tls_private_key.ssh_key.public_key_openssh
 }
-
+#demo
 resource "local_file" "private_key_file" {
   content              = tls_private_key.ssh_key.private_key_pem
   filename             = "${path.module}/key.pem"
