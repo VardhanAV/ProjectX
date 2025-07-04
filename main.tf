@@ -75,7 +75,7 @@ resource "aws_instance" "web" {
   instance_type          = "t2.micro"
   subnet_id              = data.aws_subnet.default.id
   key_name               = aws_key_pair.generated_key.key_name
-  vpc_security_group_ids = [aws_security_group.web_sg.id]
+  vpc_security_group_ids = [aws_security_group.samplesite_sg.id]
 
   tags = {
     Name = "samplesite"
