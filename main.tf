@@ -36,7 +36,7 @@ data "aws_subnet" "default" {
 
   availability_zone = "eu-central-1"
 }
-
+#demo
 resource "aws_security_group" "samplesite_sg" {
   name        = "samplesite-sg"
   description = "Allow SSH, HTTP"
